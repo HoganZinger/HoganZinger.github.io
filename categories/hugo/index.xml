@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Hugo on HoganZ</title>
+        <link>https://hoganzinger.github.io/categories/hugo/</link>
+        <description>Recent content in Hugo on HoganZ</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>https://github.com/HoganZinger</copyright>
+        <lastBuildDate>Tue, 12 Nov 2024 16:08:18 +0800</lastBuildDate><atom:link href="https://hoganzinger.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugo主题个性化</title>
+        <link>https://hoganzinger.github.io/p/hugo%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/</link>
+        <pubDate>Tue, 12 Nov 2024 16:08:18 +0800</pubDate>
+        
+        <guid>https://hoganzinger.github.io/p/hugo%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/</guid>
+        <description>&lt;img src="https://hoganzinger.github.io/post/pictures/img.png" alt="Featured image of post Hugo主题个性化" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言
+&lt;/h2&gt;&lt;p&gt;最近总觉得自己的博客看着有点平淡，想魔改一下布局，于是有了这篇博客&lt;/p&gt;
+&lt;p&gt;Hugo是一个模块化的主题，因此我们可以方便地覆盖官方提供的文件，以达到不同的视觉效果，其中更改的路径是：&lt;/p&gt;
+&lt;p&gt;更改&lt;code&gt;layout&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;·head: &lt;code&gt;layouts/partials/head/custom.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;·footer: &lt;code&gt;layouts/partials/footer/custom.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;更改&lt;code&gt;scss&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;·&lt;code&gt;assets/scss/custom.scss&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;修改背景&#34;&gt;修改背景
+&lt;/h2&gt;&lt;h3 id=&#34;自定义js&#34;&gt;自定义js
+&lt;/h3&gt;&lt;p&gt;在footer/custom.html中写入以下内容，其中src是背景源文件URL，可以自己去找一个喜欢的js文件：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;script
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;src=&amp;#34;https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/ribbon.min.js&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;integrity=&amp;#34;sha384-UEK8ZiP3VgFNP8KnKMKDmd4pAUAOJ59Y2Jo3ED2Z5qKQf6HLHovMxq7Beb9CLPUe&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;crossorigin=&amp;#34;anonymous&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;size=&amp;#34;300&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;alpha=&amp;#34;0.6&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;zindex=&amp;#34;-1&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;defer
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;示例URL的背景长这样：&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+    &lt;img src=&#34;img.png&#34;&gt;
+&lt;/div&gt;
+&lt;p&gt;当然，也可以自定义一个js文件来实现更丰富的背景自定义效果，同样是在footer/custom.html中写入以下语句&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;background/custom.js&lt;/code&gt;是你自定义的背景文件位置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;!--&amp;lt;script src={{ (resources.Get &amp;#34;background/custom.js&amp;#34;).Permalink }}&amp;gt;&amp;lt;/script&amp;gt;--&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;自定义背景图&#34;&gt;自定义背景图
+&lt;/h3&gt;&lt;p&gt;除了通过js文件来自定义背景之外，还可以直接自定义背景图&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先准备一张自己喜欢的背景图，放到&lt;code&gt;assets/background&lt;/code&gt;文件夹中（可以是assets的任意子路径）&lt;/li&gt;
+&lt;li&gt;在主题文件夹的&lt;code&gt;layouts/partials/footer/custom.html&lt;/code&gt;中写入以下内容：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  body {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    background: url({{ (resources.Get &amp;#34;background/背景图片名&amp;#34;).Permalink }}) no-repeat center top;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    background-size: cover;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    background-attachment: fixed;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/style&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;然后就可以显示自定义的背景啦
+&lt;img src=&#34;https://hoganzinger.github.io/p/hugo%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/img_1.png&#34;
+	width=&#34;2113&#34;
+	height=&#34;1202&#34;
+	srcset=&#34;https://hoganzinger.github.io/p/hugo%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/img_1_hu8960831263870484897.png 480w, https://hoganzinger.github.io/p/hugo%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96/img_1_hu3022200562586761200.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img_1.png&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;421px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如果报错显示解析出问题，重新用&lt;code&gt;hugo server -D&lt;/code&gt;启动一下服务器就好了&lt;/p&gt;
+&lt;p&gt;这种自定义方法会覆盖系统的暗色模式效果，所以如果想要保留暗色模式，这种方法就不是很好用了&lt;/p&gt;
+&lt;h2 id=&#34;文章配图&#34;&gt;文章配图
+&lt;/h2&gt;&lt;p&gt;Hugo支持多种配图方式&lt;/p&gt;
+&lt;h3 id=&#34;单独配图&#34;&gt;单独配图
+&lt;/h3&gt;&lt;p&gt;你可以对每个图片单独配图，只需将图片放在文章的文件夹里，并在文章的index.md最上方的参数中添加&lt;code&gt;image: 图片名&lt;/code&gt;即可&lt;/p&gt;
+&lt;p&gt;如果你不想增加重复的图片，只需将图片放在post文件夹中，并将index.md的参数更改为&lt;code&gt;image: post/图片名&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;动态配图&#34;&gt;动态配图
+&lt;/h3&gt;&lt;p&gt;如果没有特别喜欢的图片，又不想让博客空空的，可以采用封面随机生成的方式来美化文章的卡片&lt;/p&gt;
+&lt;p&gt;只需对文章的模板进行设置即可，打开&lt;code&gt;archetypes/default.md&lt;/code&gt;，修改&lt;code&gt;image&lt;/code&gt;字段的内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: &amp;#34;{{ replace .Name &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | title }}&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;date: {{ .Date }}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;image: https://picsum.photos/800/600.webp?random={{ substr (md5 (.Date)) 4 8 }}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这里使用了 Lorem Picsum 的接口，可以在生成新文章时得到一张随机的图片&lt;/p&gt;
+&lt;p&gt;想了解更多内容可前往 &lt;a class=&#34;link&#34; href=&#34;https://picsum.photos/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Lorem Picsum&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;当然，也可以在这里将image字段的值修改为你想要的图片，这样每篇文章的封面图都会是这张图片&lt;/p&gt;
+&lt;h3 id=&#34;修改图片的大小与布局&#34;&gt;修改图片的大小与布局
+&lt;/h3&gt;&lt;p&gt;在md中可以引入一些html的语法来对图片做精细化的处理&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;图片居中：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;div align=&amp;#34;center&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;img src=&amp;#34;img.png&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/div&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;修改图片大小&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;div align=&amp;#34;center&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &amp;lt;img src=&amp;#34;img.png&amp;#34; alt=&amp;#34;img.png&amp;#34; width=&amp;#34;300&amp;#34; height=&amp;#34;200&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/div&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;显示图注&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;div align=&amp;#34;center&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;figure&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;img src=&amp;#34;img.png&amp;#34; alt=&amp;#34;img.png&amp;#34;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &amp;lt;figcaption&amp;gt;这是图片的图注&amp;lt;/figcaption&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;lt;/figure&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;/div&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;未完待续……&lt;/p&gt;
+&lt;h2 id=&#34;鸣谢&#34;&gt;鸣谢
+&lt;/h2&gt;&lt;p&gt;本文自定义背景来自&lt;a class=&#34;link&#34; href=&#34;https://www.acfun.cn/a/ac30366567?from=video&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UP主叶柳星&lt;/a&gt;，非常感谢~&lt;/p&gt;
+&lt;p&gt;同时感谢以下博主的经验分享：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/hugo-modules/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://limuran.top/p/hugo-stack-%e4%b8%bb%e9%a2%98%e7%be%8e%e5%8c%96/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;limuran&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://letere-gzj.github.io/hugo-stack/p/hugo/custom-background&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;letere-gzj&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.xalaok.top/post/stack-modify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Naive Koala&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zhixuan2333.github.io/posts/ac760353&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;zhixuan2333&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.lsy22.com/p/hugo-theme-stack%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;lsy22&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>使用Hugo&#43;Github搭建个人博客</title>
+        <link>https://hoganzinger.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+        <pubDate>Sun, 10 Nov 2024 21:20:12 +0800</pubDate>
+        
+        <guid>https://hoganzinger.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+        <description>&lt;img src="https://hoganzinger.github.io/post/pictures/img.png" alt="Featured image of post 使用Hugo&#43;Github搭建个人博客" /&gt;&lt;h2 id=&#34;环境搭建&#34;&gt;环境搭建
+&lt;/h2&gt;&lt;h3 id=&#34;基础环境&#34;&gt;基础环境
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;操作系统：windows10&lt;/li&gt;
+&lt;li&gt;已开通github账号并安装git&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;安装hugo框架&#34;&gt;安装Hugo框架
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;可以直接从Hugo的Github地址中下载：&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;gohugoio/hugo&lt;/a&gt;
+&lt;img src=&#34;https://hoganzinger.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img.png&#34;
+	width=&#34;1552&#34;
+	height=&#34;800&#34;
+	srcset=&#34;https://hoganzinger.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img_hu9564834969957833356.png 480w, https://hoganzinger.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img_hu4748996091917986529.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img.png&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;194&#34;
+		data-flex-basis=&#34;465px&#34;
+	
+&gt;
+点击Tags后，选择一个操作系统合适的版本下载zip压缩包即可。
+这里建议，选一个最新版本的、对应操作系统的extended版本，不然对于一些用到scss的主题，在网站解析时会出现报错&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Error building site: TOCSS
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装完成后使用hugo命令检查安装状态，出现版本信息即为安装成功&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;在github创建博客仓库&#34;&gt;在Github创建博客仓库
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;在github主页点击New按钮创建一个新仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div align=&#34;center&#34;&gt;
+   &lt;img src=&#34;img_1.png&#34; alt=&#34;img_1.png&#34; width=&#34;300&#34; height=&#34;115&#34;&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;注意仓库名称Repository name必须是&amp;quot;你的用户名.github.io&amp;quot;，不然会造成一些讨厌的重定向问题；可以在Description填写仓库描述&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div align=&#34;center&#34;&gt;
+   &lt;img src=&#34;img_2.png&#34; alt=&#34;img_2.png&#34; &gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;博客搭建&#34;&gt;博客搭建
+&lt;/h2&gt;&lt;h3 id=&#34;创建blog&#34;&gt;创建Blog
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;新建一个文件夹，将下载的hugo压缩包解压到该文件夹并使用命令行cmd打开&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div align=&#34;center&#34;&gt;
+   &lt;img src=&#34;img_3.png&#34; alt=&#34;img_3.png&#34;&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;使用hugo命令创建网页项目&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   hugo new site dev  # dev为项目名，可以自定义
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;创建新网页dev后，要将hugo文件夹中的&lt;code&gt;hugo.exe&lt;/code&gt;复制到dev文件夹中以便后续的网页操作&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在命令行中进入dev文件夹，输入&lt;code&gt;hugo server -D&lt;/code&gt;，若出现以下界面说明创建成功：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div align=&#34;center&#34;&gt;
+   &lt;img src=&#34;img_4.png&#34; alt=&#34;img_4.png&#34; width=&#34;500&#34; height=&#34;300&#34;&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;在本地浏览器中输入 &lt;code&gt;http://localhost:1313/&lt;/code&gt; ,发现能够访问，但是网页没有自定义的内容，这说明完成了初步的框架搭建&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;下载主题&#34;&gt;下载主题
+&lt;/h3&gt;&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo官网&lt;/a&gt;，点击Themes选择一款喜欢的主题，笔者选择了比较popular的Stack用于演示和部署&lt;/p&gt;
+&lt;div align=&#34;center&#34;&gt;
+   &lt;img src=&#34;img_5.png&#34; alt=&#34;img_5.png&#34;&gt;
+&lt;/div&gt;
+点击download进入github，选择一个喜欢的版本下载zip（其实最新版就行）
+&lt;div align=&#34;center&#34;&gt;
+   &lt;img src=&#34;img_6.png&#34; alt=&#34;img_6.png&#34;&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;主题设置&#34;&gt;主题设置
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;主题zip解压存储在dev\themes下，将文件夹中的archetypes、 以及exampleSite 中的 content、hugo.yaml 复制到dev文件夹中，并删掉dev中原有的hugo.toml。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将解压得到的主题文件夹名字改为dev/hugo.yaml中的theme字段值&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div align=&#34;center&#34;&gt;
+   &lt;img src=&#34;img_7.png&#34; alt=&#34;img_7.png&#34;&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;若使用Stack主题，建议修改dev/hugo.yaml中的以下内容：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;baseurl: https://example.com  # 需要修改成你的网站地址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title: Example Site # 需要修改成你想在标签页显示的名称
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;DefaultContentLanguage: en # 如果是中文博客注意修改成zh-cn，以添加i18n支持
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hasCJKLanguage: false # 如果是DefaultContentLanguage修改成zh-cn，修改为true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sidebar:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;emoji: 🍥
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;avatar:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;enabled: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;local: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;src: img/avatar.png # 头像的位置在assets/img/avatar.png
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;article:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;math: false # 使用数学公式需要打开
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再次在命令行中输入&lt;code&gt;hugo server -D&lt;/code&gt;，发现浏览器中能够正确显示主题内容&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div align=&#34;center&#34;&gt;
+   &lt;img src=&#34;img_8.png&#34; alt=&#34;img_8.png&#34;&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;错误处理&#34;&gt;错误处理
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;若在启动服务器时报错&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;error calling partial: partial &amp;#34;article-list/default&amp;#34; timed out after 30s. This is most likely due to infinite recursion. If this is just a slow template, you can try to increase the &amp;#39;timeout&amp;#39; config setting.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;则在根目录的hugo.yaml中添加timeout字段，将默认的30s超时时间设置为5m&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若出现报错&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ERROR error calling resources.GetRemote: Get &amp;#34;https://publish.twitter.com/oembed?dnt=false&amp;amp;omit_script=true&amp;amp;url=https%3A%2F%2Ftwitter.com%2FDesignReviewed%2Fstatus%2F1085870671291310081&amp;#34;: dial tcp [2a03:2880:f12c:83:face:b00c:0:25de]:443: i/o timeout
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ERROR error calling resources.GetRemote: Get &amp;#34;https://vimeo.com/api/oembed.json?dnt=0&amp;amp;url=https%3A%2F%2Fvimeo.com%2F48912912&amp;#34;: dial tcp [2a03:2880:f12c:83:face:b00c:0:25de]:443: i/o timeout
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;则在content/post/rich-content目录下index.md文件中，删除以下内容即可：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://hoganzinger.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img_9.png&#34;
+	width=&#34;698&#34;
+	height=&#34;175&#34;
+	srcset=&#34;https://hoganzinger.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img_9_hu16808506099377613802.png 480w, https://hoganzinger.github.io/p/%E4%BD%BF%E7%94%A8hugo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/img_9_hu4114112319375503616.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;img_9.png&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;398&#34;
+		data-flex-basis=&#34;957px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;创建文章&#34;&gt;创建文章
+&lt;/h3&gt;&lt;p&gt;可以使用下面的Hugo命令创建文章，生成的Markdown文件的元数据中image可以指定文章封面，draft表示文章是否属于草稿，草稿文件不会被发布，hidden表示文章是否会被隐藏&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new post/test/index.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;使用markdown编辑器编辑index.md即可编辑网页内容&lt;/p&gt;
+&lt;p&gt;创建文章后重新启动服务器，即可通过浏览器来预览：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server -D
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;github部署&#34;&gt;Github部署
+&lt;/h2&gt;&lt;p&gt;在完成所有的环境配置和仓库构建后，我们就可以进行github的部署了&lt;/p&gt;
+&lt;p&gt;首先在命令行中回到dev文件夹下，输入&lt;code&gt;hugo&lt;/code&gt;命令来生成静态html文件，生成的文件存放在public文件夹中，因此接下来我们只需要将public文件夹推送到github仓库就大功告成了&lt;/p&gt;
+&lt;p&gt;进入public文件夹，执行下面的命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init -b main 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add origin 你的远程仓库地址
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &amp;#34;First commit&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push origin main
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;上传成功后，即可在&lt;code&gt;https://{github用户名}.github.io&lt;/code&gt;看到自己的博客和主页了&lt;/p&gt;
+&lt;h2 id=&#34;参考文献&#34;&gt;参考文献
+&lt;/h2&gt;&lt;p&gt;鸣谢以下博主的分享&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://sazerac-kk.github.io/p/%E6%95%99%E7%A8%8Bhugo-github%E5%8D%9A%E5%AE%A2%E9%83%A8%E7%BD%B2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;sazerac-kk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ratmomo.github.io/p/2024/06/%E4%BD%BF%E7%94%A8-hugo--github-pages-%E9%83%A8%E7%BD%B2%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ratmomo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jianshu.com/p/14d4206f0725&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;老牛退休在家&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
