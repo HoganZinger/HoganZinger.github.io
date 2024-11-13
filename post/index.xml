@@ -13,7 +13,7 @@
         <pubDate>Wed, 13 Nov 2024 12:40:36 +0800</pubDate>
         
         <guid>https://hoganzinger.github.io/p/hugo%E6%96%87%E7%AB%A0%E7%BC%BA%E5%A4%B1/</guid>
-        <description>&lt;img src="https://hoganzinger.github.io/post/pictures/image.png" alt="Featured image of post Hugo文章缺失" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
+        <description>&lt;img src="https://hoganzinger.github.io/post/pictures/img.png" alt="Featured image of post Hugo文章缺失" /&gt;&lt;h3 id=&#34;前言&#34;&gt;前言
 &lt;/h3&gt;&lt;p&gt;Hugo 在以下情况下不会发布内容：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;draft 值为true
 
